@@ -10,3 +10,49 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.container {box-shadow: 5px 5px 10px;
+   justify-content: center;
+box-sizing: border-box;
+padding-bottom: 30px;
+margin-top: 50px;
+text-align:center;
+height: 150px;
+width: 550px;
+
+}
+
+h1 { font-family:Georgia, 'Times New Roman', Times, serif;}
+
+body {color: gray}
+
+.list-group-item {
+    display:flex;  /*Para mostraro todo en una linea*/
+     
+     justify-content: center;
+    
+    font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(77, 77, 77);
+  }
+
+  .delete-click {
+
+    cursor:grab;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.354);
+    margin-left: auto;/* Esto separa el texto y la X */
+    display: none; /* Ocultar primero Mostrar solo cuando se posiciona en el elemento */
+    width: 20px;
+    height: 20px;
+    line-height: 20px;  /* Centra el texto dentro del círculo */
+    pointer-events: painted;
+  }
+
+
+p{
+    text-align: left;
+}
+.list-group-item:hover .delete-click {
+  display: block; /* Mostrar solo cuando se posiciona en el elemento */
+
+}
